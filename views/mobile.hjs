@@ -1,0 +1,43 @@
+<!doctype html>
+
+<head>
+    <base href="/">
+    <title>Chatbot Sicredi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="mobile/css/google-fonts.css" rel="stylesheet">
+    <link rel='stylesheet' href='mobile/css/material-icons.css'>
+    <link rel="stylesheet" href="mobile/css/style.css">
+</head>
+
+<body>
+    <div id="body">
+        <div id="chat-box" class="closed">
+            <div class="chat-box-body" id="chat-box-body">
+                <div class="chat-logs" id="log"></div>
+            </div>
+            <div class="chat-input" id="newConversation-box" style="display:none">
+                <a id="btnNewChat">Iniciar nova conversa</a>
+
+                {{!-- Descomentar o código abaixo caso eles peçam para adicionar o botão de download da conversa --}}
+                {{!-- <button class="btn-download" data-tooltip="Clique aqui para fazer o download da conversa"
+                    id="btnDownloadConversation">
+                    <i class="material-icons">get_app</i>
+                </button> --}}
+            </div>
+            <form class="chat-input" id="input-box" autocomplete="off">
+                <input type="text" id="chat-input" placeholder="{{ placeholderEnvioMensagem }}" />
+                <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="mobile/js/common.js"></script>
+    <script src="mobile/js/api.js"></script>
+    <script src="mobile/js/conversation.js"></script>
+    <script src="mobile/js/mobile.js"></script>
+</body>
+
+</html>
+

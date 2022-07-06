@@ -1,0 +1,62 @@
+<!doctype html>
+
+<head>
+    <base href="/">
+    <title>Chatbot Sicredi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="images/sicredi.png">
+
+    <link href="css/google-fonts.css" rel="stylesheet">
+    <link rel='stylesheet' href='css/material-icons.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="body">
+        <div id="chat-box" class="closed">
+            <div class="chat-img" style="opacity: 0;">
+                <img class="chat-box-img" src="images/isabela-minimizado.png" />
+            </div>
+            <div class="chat-box-header" id="chat-box-header">
+                {{ comoPossoAjudar }}
+                <div class="chat-header-text">
+                    <span>Olá! Sou o assistente virtual do Sicredi</span>
+                </div>
+                <div class="chat-toggle-area">
+                    <span id="chat-box-toggle"><i class="material-icons">keyboard_arrow_up</i></span>
+                </div>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-logs" id="log"></div>
+            </div>
+            <div class="chat-input" id="newConversation-box" style="display:none">
+                <a id="btnNewChat">Iniciar nova conversa</a>
+
+                {{!-- Descomentar o código abaixo caso eles peçam para adicionar o botão de download da conversa --}}
+                <button class="btn-download" data-tooltip="Clique aqui para fazer o download da conversa"
+                    id="btnDownloadConversation">
+                    <i class="material-icons">get_app</i>
+                </button>
+            </div>
+            <form class="chat-input" id="input-box" autocomplete="off">
+                <input type="text" id="chat-input" placeholder="{{ placeholderEnvioMensagem }}" />
+                <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/conversation.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf-customfonts@0.0.4-rc.4/dist/jspdf.customfonts.min.js"
+        integrity="sha256-1RXct91sw0HDe6COEU9O7Dh+Vu6BIqKPlpcNi6omoUs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.0.10/jspdf.plugin.autotable.min.js"
+        integrity="sha256-N6i+3xV39sAGyXw9sED7Wb0Zlkkg/8DWhBApT4jlA2k=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</body>
+
+</html>

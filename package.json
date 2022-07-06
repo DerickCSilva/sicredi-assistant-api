@@ -1,0 +1,38 @@
+{
+    "name": "sicredi-assistant-api",
+    "version": "0.1.0",
+    "description": "Service for the Sicredi Bot",
+    "main": "server.js",
+    "private": true,
+    "engines": {
+        "node": ">=8.0.x",
+        "npm": ">=5.0.x"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "start:dev": "nodemon --inspect server.js"
+    },
+    "author": "Derick Cardoso da Silva",
+    "dependencies": {
+        "axios": "^0.20.0",
+        "body-parser": "1.19.0",
+        "cors": "2.8.5",
+        "dotenv": "8.2.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "express": "4.17.1",
+        "hjs": "0.0.6",
+        "http-status": "^1.5.2",
+        "ibm-watson": "^5.7.1",
+        "moment": "^2.29.3",
+        "moment-timezone": "^0.5.34",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.17.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "nodemon": "2.0.4",
+        "prettier": "^2.7.0"
+    }
+}

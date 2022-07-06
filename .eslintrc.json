@@ -1,0 +1,34 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base",
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "no-unused-vars": "warn",
+        "class-methods-use-this": "off",
+        "array-callback-return": "warn",
+        "no-console": "off",
+        "default-case": "off",
+        "no-case-declarations": "off",
+        "no-extend-native": "off",
+        "no-param-reassign": "off"
+    }
+}
+
+// Use o comentário abaixo na linha que deseja desativar alguma regra do eslint
+// eslint-disable-line
+
+// Use o comentário abaixo em uma parte do código, tendo ciência que desativará as regras do eslint daquela linha em diante no arquivo
+/* eslint-disable */

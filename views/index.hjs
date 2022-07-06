@@ -1,0 +1,24 @@
+<!doctype html>
+
+<head>
+    <base href="/">
+    <title>Chatbot Sicredi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/sicredi.png">
+
+    <link rel="stylesheet" href="/widget/widgetChatBot.css">
+</head>
+
+<body>
+    <script src="/widget/widgetChatBot.js"></script>
+    <script>
+
+        widgetChatBot.init({
+            domain: "/chat?",
+            position: 'right'
+        });
+    </script>
+</body>
+
+</html>
