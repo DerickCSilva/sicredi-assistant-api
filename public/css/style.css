@@ -570,45 +570,16 @@ ul.down-default a:hover {
 }
 
 /*Scrool Colors*/
-.liv::-webkit-scrollbar-thumb {
-    background-color: #FF9057;
-}
-
-.tec::-webkit-scrollbar-thumb {
-    background-color: #F7BD23;
-}
-
-.mtec::-webkit-scrollbar-thumb {
-    background-color: #C761CB;
-}
-
-.pos::-webkit-scrollbar-thumb {
-    background-color: #665EFF;
-}
-
-.gra::-webkit-scrollbar-thumb {
-    background-color: #4A97E6;
-}
-
-.ext::-webkit-scrollbar-thumb {
-    background-color: #3ECCA6;
-}
-
 .default::-webkit-scrollbar-thumb {
     background-color: #64C832;
 }
-
-.jov::-webkit-scrollbar-thumb {
-    background-color: #3ACCE1;
-}
-
 
 .msg-avatar {
     position: relative;
     width: 45px;
     height: 0px;
-    display: block;
-    /* float: left; */
+    /* display: block; */
+    float: left;
     margin-right: -45px;
 }
 
